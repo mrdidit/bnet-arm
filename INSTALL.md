@@ -1,6 +1,6 @@
 # BNet installation
 
-BNet is an experimental Battle.net compatibility tool for Linux ARM64, based on GE-Proton11-7. Diablo II: Resurrected gameplay was reported on 18 October 2026 on KPFE (Snapdragon 8 Elite) running Armada `20261018.30ef88c`. Steam's selected tool and a later launcher's patched component hashes were verified; the earlier D2R process was not captured. Session duration and long-term stability are unmeasured.
+BNet is an experimental Battle.net compatibility tool for Linux ARM64, based on GE-Proton11-7. Diablo II: Resurrected and Diablo III are reported to reach gameplay on KPFE (Snapdragon 8 Elite) running Armada `20261018.30ef88c`. The 19 October 2026 report covers both games with Default and Custom settings reported; effective settings for each gameplay session were not captured. Steam's selected tool and patched component hashes in later Battle.net processes were verified separately; the gameplay processes were not captured. Session duration and long-term stability are unmeasured.
 
 The build requires an ARMv8.2-A compatible CPU, Steam's ARM64 runtime (app ID `4185400`) and working graphics drivers. Other compatible ARM64 hardware and distributions are supported in principle but have not received game validation. There is no KPFE or Steam Frame restriction.
 
@@ -21,9 +21,9 @@ Back up the Battle.net shortcut's Steam `compatdata` prefix before first launch 
 
 ## Armada FEX settings
 
-On affected Armada versions, per-game FEX settings may be ignored and global settings used instead. No BNet FEX preset has been proven. Keep the known-working configuration and close Battle.net before controlled settings changes. This release does not change FEX settings or fix Armada's settings routing.
+On affected Armada versions, per-game FEX settings may be ignored and global settings used instead. Effective FEX settings for the reported Default and Custom gameplay sessions were not captured. No required BNet FEX preset has been proven. Keep the known-working configuration and close Battle.net before controlled settings changes. This release does not change FEX settings or fix Armada's settings routing.
 
-On 19 October, a running Battle.net background agent was observed using global Custom settings equivalent to Fast plus TSO: TSO on, Half Barrier/Vector/Memcpy TSO off, multiblock and reduced x87 precision on. That observation does not identify the earlier D2R gameplay configuration or establish a required preset.
+On 19 October, a running Battle.net process was observed using global Custom settings equivalent to Fast plus TSO: TSO on, Half Barrier/Vector/Memcpy TSO off, multiblock and reduced x87 precision on. That observation verifies the Battle.net process's effective settings, but does not establish the gameplay configuration or a required preset for either game.
 
 ## Optional diagnostics
 

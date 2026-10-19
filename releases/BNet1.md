@@ -2,7 +2,7 @@
 
 Standalone GE-Proton11-7 ARM64 compatibility tool for Battle.net games on Linux. Includes matching GameNative Wine/FEX changes rebuilt for Linux ARM64, alongside the unchanged GE-Proton runtime components.
 
-Diablo II: Resurrected reached gameplay on KONKR Pocket FIT Elite (Snapdragon 8 Elite / SM8750), running Armada `20261018.30ef88c`. Longer-term stability, other Battle.net games and other devices remain unverified.
+Diablo II: Resurrected and Diablo III reached gameplay on KONKR Pocket FIT Elite (Snapdragon 8 Elite / SM8750), running Armada `20261018.30ef88c`. Gameplay was reported with Default and Custom FEX settings selected; the effective configuration of each session was not captured. Longer-term stability, other Battle.net games and other devices remain unverified.
 
 ## Install
 

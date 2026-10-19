@@ -6,7 +6,7 @@ A custom **GE-Proton11-7 ARM64** compatibility tool for Battle.net games on Linu
 
 ## Status
 
-Diablo II: Resurrected reached gameplay on a **KONKR Pocket FIT Elite, Snapdragon 8 Elite (SM8750)** running Armada `20261018.30ef88c`. Longer-term stability and other games or devices remain unverified. The tool has no KPFE-specific installation restriction; it requires a compatible Linux ARM64 Steam environment.
+**Diablo II: Resurrected and Diablo III** reached gameplay on a **KONKR Pocket FIT Elite, Snapdragon 8 Elite (SM8750)** running Armada `20261018.30ef88c`. Longer-term stability and other games or devices remain unverified. The tool has no KPFE-specific installation restriction; it requires a compatible Linux ARM64 Steam environment.
 
 See [validation and known limitations](VALIDATION.md) for the scope of testing.
 
