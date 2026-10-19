@@ -4,15 +4,15 @@ BNet is a Linux ARM64 compatibility tool based on GE-Proton11-7. The release ref
 
 ## Device test scope
 
-On 19 October 2026, Diablo II: Resurrected and Diablo III were reported to reach gameplay on KPFE (Snapdragon 8 Elite), Armada `20261018.30ef88c`, with Default and Custom settings reported. Effective settings for each of those gameplay sessions were not captured. These reports do not establish independently verified effective presets. No Diablo III process capture, game version or measured session duration is available.
+On 19 October 2026, Diablo II: Resurrected and Diablo III reached gameplay on KPFE (Snapdragon 8 Elite), Armada `20261018.30ef88c`, with global Default and global Custom (Fast with TSO enabled) FEX settings. Per-session process environments and gameplay duration were not captured. The Diablo III version was not recorded.
 
-D2R gameplay was reported on 18 October 2026 on KPFE (Snapdragon 8 Elite) running Armada `20261018.30ef88c`, boot `cca7b910-ae32-4eb8-a473-5539dac97abd`. Steam's saved selection identifies BNet. Launcher logs record D2R launching and `gameRunning=1` at 19:55 UTC. The earlier D2R process was not captured, so its loaded binaries, effective FEX configuration and gameplay duration were not independently measured. A later Battle.net setup process loaded the expected patched Wine ntdll and matching WOW64 FEX DLL/UnixLib hashes.
+D2R reached gameplay on 18 October 2026 on KPFE (Snapdragon 8 Elite) running Armada `20261018.30ef88c`, boot `cca7b910-ae32-4eb8-a473-5539dac97abd`. Steam's saved selection identifies BNet. Launcher logs record D2R launching and `gameRunning=1` at 19:55 UTC. The earlier D2R process was not captured, so its loaded binaries and effective FEX configuration were not verified. A later Battle.net setup process loaded the expected patched Wine ntdll and matching WOW64 FEX DLL/UnixLib hashes.
 
-These are reported gameplay milestones with separate Battle.net process/runtime verification. Long-term stability, other Battle.net games and other hardware/distributions have not received game validation. The package does not impose a KPFE or Steam Frame restriction. The build requires an ARMv8.2-A compatible CPU, compatible Steam ARM64 runtime (app ID `4185400`) and working graphics support.
+Long-term stability, other Battle.net games and other hardware/distributions remain untested. The package does not impose a KPFE or Steam Frame restriction. The build requires an ARMv8.2-A compatible CPU, compatible Steam ARM64 runtime (app ID `4185400`) and working graphics support.
 
 ## FEX preset routing
 
-On the affected Armada build, `armada-game-launch` selected `STEAM_COMPAT_APP_ID=0` before valid `SteamAppId=3609908584`. It therefore generated global FEX settings instead of the shortcut's per-game settings. The latest report covers successful gameplay in both D2R and Diablo III with Default and Custom settings reported. Effective settings for those gameplay sessions were not captured, so no TSO toggle has been isolated as necessary. Earlier reports of launcher failures with Fast/Custom preceded this update and remain confounded by the same routing issue. The gameplay processes and their exact environments were not captured.
+On the affected Armada build, `armada-game-launch` selected `STEAM_COMPAT_APP_ID=0` before valid `SteamAppId=3609908584`. It therefore generated global FEX settings instead of the shortcut's per-game settings. The 19 October gameplay tests changed global settings directly. Earlier launcher failures with Fast/Custom did not isolate a cause because of the routing issue; no TSO toggle has been isolated as necessary.
 
 Per-game FEX settings may be ignored on affected Armada versions; global settings are used. No required BNet FEX preset has been proven. Keep the known-working configuration and close Battle.net before controlled changes. This release does not alter settings or repair Armada's routing.
 
