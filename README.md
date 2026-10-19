@@ -10,6 +10,8 @@ A custom **GE-Proton11-7 ARM64** compatibility tool for Battle.net games on Linu
 
 See [validation and known limitations](VALIDATION.md) for the scope of testing.
 
+Both games reached gameplay with Armada's **global Default** and **global Custom (Fast with TSO enabled)** settings. These were global setting changes, not per-game preset changes.
+
 ## Installation
 
 1. Download `GE-Proton11-7-Bnet1-arm64.tar.gz` and its matching checksum from the release.
