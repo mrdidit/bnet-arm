@@ -8,6 +8,8 @@ The release includes the actual prepared component sources, build scripts and or
 
 The first archive contains the modified Wine/FEX sources and component build recipes. The other two preserve the sources for the unchanged GE-Proton components.
 
+The ten original BNet build and packaging scripts use the [MIT License with explicit file scope](BUILD-LICENSE.md). The component archive includes this scope notice and full license texts. Upstream scripts and components retain their existing licenses.
+
 Extract the component archive into a build directory:
 
 ```sh

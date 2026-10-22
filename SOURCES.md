@@ -30,3 +30,5 @@ Build the included prepared trees with `wine-port/build-components.py` and `fex-
 The pinned [llvm-mingw 20260616 AArch64 toolchain](https://github.com/mstorsjo/llvm-mingw/releases/download/20260616/llvm-mingw-20260616-ucrt-ubuntu-22.04-aarch64.tar.xz) is an external build prerequisite with SHA256 `e7e5d135d93d3f2a3beaaea633a5b0e66ac75391a53feae654391913dd76102b`. `toolchain-release.json` records verified upstream asset metadata.
 
 The runtime retains upstream GE notices and `bnet/licenses/` for replacement components and linked dependencies, including Wine, FEX and LLVM runtime notices. The source archives preserve their original license files and copyright headers. Redistribute these source and notice assets with the binary; unspecified branch links do not replace them.
+
+The original BNet build and packaging scripts use the [MIT License with explicit file scope](BUILD-LICENSE.md). The 22 October 2026 component-source refresh adds licensing and provenance documentation only; all pre-existing archive entries remain unchanged. The runtime and both GE source archives retain their original checksums.
