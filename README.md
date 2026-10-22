@@ -2,7 +2,7 @@
 
 A custom **GE-Proton11-7 ARM64** compatibility tool for Battle.net games on Linux, using matching Wine and FEX changes from GameNative. It installs alongside other Steam compatibility tools.
 
-**[Download BNet1 — experimental prerelease](https://github.com/mrdidit/bnet-arm/releases/tag/BNet1)**
+**[Download BNet1 for Linux ARM64](https://github.com/mrdidit/bnet-arm/releases/download/BNet1/GE-Proton11-7-Bnet1-arm64.tar.gz)** · [Download checksum](https://github.com/mrdidit/bnet-arm/releases/download/BNet1/GE-Proton11-7-Bnet1-arm64.tar.gz.sha256) · [Experimental release notes](https://github.com/mrdidit/bnet-arm/releases/tag/BNet1)
 
 ## Status
 
@@ -14,11 +14,13 @@ Both games reached gameplay with Armada's **global Default** and **global Custom
 
 ## Installation
 
-1. Download `GE-Proton11-7-Bnet1-arm64.tar.gz` and its matching checksum from the release.
+1. Download the complete tool and its checksum using the links above.
 2. Verify the checksum and extract the archive into `~/.local/share/Steam/compatibilitytools.d/`.
 3. Restart Steam and select **GE-Proton11-7-Bnet1 (ARM64)** in the Battle.net shortcut's compatibility settings.
 
 Keep the existing Battle.net installation and prefix. No Python installer is needed. [Full installation, requirements and rollback](INSTALL.md).
+
+The `.tar.gz` extracts to one `GE-Proton11-7-Bnet1-arm64` folder. Source archives are developer downloads for rebuilding and redistribution; they are not needed to install the tool.
 
 ### Armada FEX settings
 

@@ -6,7 +6,7 @@ The build requires an ARMv8.2-A compatible CPU, Steam's ARM64 runtime (app ID `4
 
 ## Installation
 
-Download `GE-Proton11-7-Bnet1-arm64.tar.gz` and its matching `.sha256` file from the [BNet1 experimental release](https://github.com/mrdidit/bnet-arm/releases/tag/BNet1). In the download directory:
+Download the [complete BNet1 tool](https://github.com/mrdidit/bnet-arm/releases/download/BNet1/GE-Proton11-7-Bnet1-arm64.tar.gz) and its [matching checksum](https://github.com/mrdidit/bnet-arm/releases/download/BNet1/GE-Proton11-7-Bnet1-arm64.tar.gz.sha256). The source archives are only needed for rebuilding or redistribution. In the download directory:
 
 ```sh
 sha256sum -c GE-Proton11-7-Bnet1-arm64.tar.gz.sha256 &&
@@ -16,6 +16,8 @@ sha256sum -c GE-Proton11-7-Bnet1-arm64.tar.gz.sha256 &&
 ```
 
 Use the corresponding `compatibilitytools.d` directory if Steam is installed elsewhere. The command stops if the destination already exists; do not merge archives into an existing tool directory.
+
+The `.tar.gz` is a gzip-compressed tar archive. The command extracts both layers in one operation, creating `GE-Proton11-7-Bnet1-arm64/` directly inside `compatibilitytools.d/`. Some archive viewers display `././@PaxHeader`; this is metadata for long filenames and symlink targets, handled automatically by `tar`.
 
 Back up the Battle.net shortcut's Steam `compatdata` prefix before first launch with BNet. A Proton switch may update that prefix. Fully exit and restart Steam, then open the Battle.net shortcut's Properties → Compatibility and select **GE-Proton11-7-Bnet1 (ARM64)**. Keep the existing Battle.net installation, shortcut target and launch options. Installation is archive extraction; no separate Python installer is required.
 
